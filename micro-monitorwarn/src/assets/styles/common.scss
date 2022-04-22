@@ -1,0 +1,41 @@
+.vbreadcrumbs {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0  22px 0px;
+
+  .vbreadcrumbs-ul {
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 50px;
+    margin: 0 0 16px 0;
+
+    li {
+      align-items: center;
+      display: inline-flex;
+      font-size: 14px;
+      color: #6f7583;
+      list-style: none;
+    }
+
+    .active {
+      color: #454954;
+      cursor: pointer;
+    }
+
+    .vbreadcrumbs__divider {
+      color: rgba(0, 0, 0, .38);
+      padding: 0 12px;
+    }
+  }
+
+  .content {
+    padding: 0 0 0 50px;
+  }
+}
+.ant-btn-primary {
+  background: #397DC9 !important;
+}

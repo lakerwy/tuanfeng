@@ -1,0 +1,55 @@
+{
+  "name": "micro-tuanfen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm-run-all --serial install:*",
+    "start": "npm-run-all --parallel start:*",
+    "build": "npm-run-all --parallel build:*",
+    "install:main": "cd micro-app-main && yarn",
+    "start:main": "cd micro-app-main && yarn serve",
+    "build:main": "cd micro-app-main && yarn build",
+    "install:devops": "cd micro-devops && yarn",
+    "start:devops": "cd micro-devops && yarn serve",
+    "build:devops": "cd micro-devops && yarn build",
+    "install:oneMap": "cd one-map && yarn",
+    "start:oneMap": "cd one-map && yarn serve",
+    "build:oneMap": "cd one-map && yarn build",
+    "install:achievement": "cd micro-achievement && yarn",
+    "start:achievement": "cd micro-achievement && yarn serve",
+    "build:achievement": "cd micro-achievement && yarn build",
+    "install:targetManage": "cd target-management && yarn",
+    "start:targetManage": "cd target-management && yarn serve",
+    "build:targetManage": "cd target-management && yarn build",
+    "install:bearing": "cd micro-bearingcapacity && yarn",
+    "start:bearing": "cd micro-bearingcapacity && yarn serve",
+    "build:bearing": "cd micro-bearingcapacity && yarn build",
+    "install:analysis": "cd micro-analysisAndEvaluation && yarn",
+    "start:analysis": "cd micro-analysisAndEvaluation && yarn serve",
+    "build:analysis": "cd micro-analysisAndEvaluation && yarn build",
+    "install:naturalResources": "cd micro-naturalResources && yarn",
+    "start:naturalResources": "cd micro-naturalResources && yarn serve",
+    "build:naturalResources": "cd micro-naturalResources && yarn build",
+    "install:thematicApplication": "cd micro-thematicApplication  && yarn",
+    "start:thematicApplication": "cd micro-thematicApplication  && yarn serve",
+    "build:thematicApplication": "cd micro-thematicApplication  && yarn build",
+    "install:modelManage": "cd model-management  && yarn",
+    "start:modelManage": "cd model-management  && yarn serve",
+    "build:modelManage": "cd model-management  && yarn build",
+    "install:monitorwarn": "cd micro-monitorwarn  && yarn",
+    "start:monitorwarn": "cd micro-monitorwarn  && yarn serve",
+    "build:monitorwarn": "cd micro-monitorwarn  && yarn build"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "renjimin",
+  "license": "MIT",
+  "devDependencies": {
+    "npm-run-all": "4.1.5"
+  },
+  "dependencies": {
+    "js-cookie": "^2.2.1"
+  }
+}

@@ -1,0 +1,73 @@
+.text-weig {
+  color: #eda169;
+}
+.text-light {
+  color: #f6d641;
+}
+
+.text-heath{
+  color: #5ec26d;
+}
+
+.cust-weig {
+  color: #eda169;
+}
+.cust-light {
+  color: #f6d641;
+}
+
+.heath-light {
+  color: #5ec26d;
+}
+
+.cust-weightbtn, .cust-weightbtn:hover {
+  background-color: #eda169;
+  border: 1px solid #eda169;
+  color: #ffffff;
+}
+
+.cust-lightbtn, .cust-lightbtn:hover {
+  background-color: #f6d641;
+  border: 1px solid #f6d641;
+  color: #ffffff;
+}
+
+.heath-light, .heath-light:hover {
+  background-color: #5ec26d;
+  border: 1px solid #5ec26d;
+  color: #ffffff;
+}
+::-webkit-scrollbar {
+
+  width: 10px;
+
+  height: 6px;
+
+  background-color: rgba(240, 240, 240, 1);
+
+}
+
+/*定义滚动条轨道内阴影+圆角*/
+
+::-webkit-scrollbar-track {
+
+  box-shadow: inset000pxrgba(240, 240, 240, .5);
+
+  border-radius: 10px;
+
+  background-color: rgba(240, 240, 240, .8);
+
+}
+
+/*定义滑块内阴影+圆角*/
+
+::-webkit-scrollbar-thumb {
+
+  border-radius: 10px;
+
+  box-shadow: inset000pxrgba(240, 240, 240, .5);
+
+  background-color:#eeeeee;
+
+}
+

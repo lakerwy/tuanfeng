@@ -1,0 +1,87 @@
+{
+  "devops": {
+    "API_HOME": "http://192.168.99.132:10005/sys",
+    "API_SERVICE": "http://192.168.99.132:10005/proxy",
+    "IMG_UPLOAD": "http://192.168.100.202:20001",
+    "IMG_PREFIX": "http://192.168.100.3:10009",
+    "baseUrl": {
+      "pro": "http://192.168.250.29:10005"
+    },
+    "sso": {
+      "OAUTH_REDIRECT_URI": "http://192.168.99.116:8080",
+      "SSO_BASE_URL": "http://192.168.99.132:30001/cas/",
+      "OAUTH_CLIENT_ID": "cmsadmin",
+      "OAUTH_CLIENT_SECRET": "cmsadmin"
+    },
+    "tuanfengxian": {
+      "url": "http://192.168.250.200/arcgis/rest/services/tuanfengxian/MapServer",
+      "xian": 1,
+      "xiang": 0
+    },
+    "vectorLayer": [
+      {
+        "url": "http://t4.tianditu.com/DataServer?T=img_w&x={x}&y={y}&l={z}&tk=d9160cdd3e165f779df0909d33be966d",
+        "projection": "EPSG:3857",
+        "type": "xyz"
+      },
+      {
+        "url": "http://t4.tianditu.com/DataServer?T=cia_w&x={x}&y={y}&l={z}&tk=d9160cdd3e165f779df0909d33be966d",
+        "projection": "EPSG:3857",
+        "type": "xyz"
+      }
+    ],
+    "imageLayer": [
+      {
+        "url": "http://t4.tianditu.com/DataServer?T=vec_w&x={x}&y={y}&l={z}&tk=d9160cdd3e165f779df0909d33be966d",
+        "projection": "EPSG:3857",
+        "type": "xyz"
+      },
+      {
+        "url": "http://t4.tianditu.com/DataServer?T=cva_w&x={x}&y={y}&l={z}&tk=d9160cdd3e165f779df0909d33be966d",
+        "projection": "EPSG:3857",
+        "type": "xyz"
+      }
+    ],
+    "zoom": 11,
+    "center": [
+      114.867012,
+      30.646081
+    ],
+    "farmlandLayer": {
+      "type": "ArcGISServer",
+      "url": "http://192.168.250.44:6080/arcgis/rest/services/LHKMAP/jcdt_0/MapServer",
+      "layers": "*",
+      "extent": [
+        111.65962418692916,
+        32.37649791688585,
+        111.68100810521858,
+        32.38834008678981
+      ],
+      "layerName": "farmlandLayer"
+    },
+    "ecologyLayer": {
+      "type": "ArcGISServer",
+      "url": "http://192.168.250.44:6080/arcgis/rest/services/LHKMAP/jcdt_10/MapServer",
+      "layers": "*",
+      "extent": [
+        111.40038439955704,
+        32.254957980527855,
+        111.78193097184193,
+        32.46625411784559
+      ],
+      "layerName": "ecologyLayer"
+    },
+    "borderLayer": {
+      "type": "ArcGISServer",
+      "url": "http://192.168.250.44:6080/arcgis/rest/services/LHKMAP/jcdt_11/MapServer",
+      "layers": "*",
+      "extent": [
+        111.61670714824957,
+        32.35481801029004,
+        111.68029824363039,
+        32.39003403317633
+      ],
+      "layerName": "borderLayer"
+    }
+  }
+}

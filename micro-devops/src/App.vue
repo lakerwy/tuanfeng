@@ -1,0 +1,34 @@
+<!--
+ * @Author: 任继民
+ * @LastEditors: 任继民
+-->
+<template>
+  <div id="app">
+    <router-view />
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'App',
+  data: ()=>({
+
+  })
+}
+</script>
+
+<style lang="less">
+.size{
+  width: 100%;
+  height: 100%;
+}
+html,body{
+  .size;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+#app {
+  .size;
+}
+</style>

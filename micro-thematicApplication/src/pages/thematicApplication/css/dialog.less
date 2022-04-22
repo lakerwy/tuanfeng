@@ -1,0 +1,37 @@
+.map-dialog {
+    width: 780px;
+    height: 572px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 0 20px;
+    position: absolute;
+    left: 40%;
+    top: 10%;
+    z-index: 99;
+
+    /deep/.dialog-header {
+        height: 54px;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 14px;
+        text-align: left;
+
+        .dialog-title {
+            font-size: 16px;
+            color: #454954;
+            line-height: 54px;
+        }
+
+        .dialog-close {
+            cursor: pointer;
+            background: url("../../../assets/imgs/icon-close.png") no-repeat center;
+            height: 24px;
+            width: 24px;
+            position: absolute;
+            right: 20px;
+            top: 16px;
+        }
+    }
+    /deep/.dialog-content {
+        width: 100%;
+    }
+}
